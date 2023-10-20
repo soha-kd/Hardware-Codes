@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml shiftRegister.twx shiftRegister.ncd -o shiftRegister.twr
+shiftRegister.pcf
+
+Design file:              shiftRegister.ncd
+Physical constraint file: shiftRegister.pcf
+Device,package,speed:     xc3s400,pq208,-5 (PRODUCTION 1.39 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock input_clk
+-----------------+------------+------------+------------------+--------+
+                 |Max Setup to|Max Hold to |                  | Clock  |
+Source           | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+-----------------+------------+------------+------------------+--------+
+input_data<0>    |    0.784(R)|    0.659(R)|input_clk_BUFGP   |   0.000|
+input_data<1>    |    0.420(R)|    0.947(R)|input_clk_BUFGP   |   0.000|
+input_data<2>    |    0.667(R)|    0.749(R)|input_clk_BUFGP   |   0.000|
+input_data<3>    |    1.230(R)|    0.299(R)|input_clk_BUFGP   |   0.000|
+input_data<4>    |    0.420(R)|    0.947(R)|input_clk_BUFGP   |   0.000|
+input_data<5>    |    0.738(R)|    0.692(R)|input_clk_BUFGP   |   0.000|
+input_data<6>    |    0.667(R)|    0.750(R)|input_clk_BUFGP   |   0.000|
+input_data<7>    |    1.278(R)|    0.548(R)|input_clk_BUFGP   |   0.000|
+input_load       |    2.521(R)|    0.200(R)|input_clk_BUFGP   |   0.000|
+input_rotate_left|    2.720(R)|   -0.622(R)|input_clk_BUFGP   |   0.000|
+input_shift_left |    2.737(R)|    0.123(R)|input_clk_BUFGP   |   0.000|
+input_shift_right|    2.783(R)|    0.133(R)|input_clk_BUFGP   |   0.000|
+-----------------+------------+------------+------------------+--------+
+
+Clock input_clk to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+output_data<0>|    7.369(R)|input_clk_BUFGP   |   0.000|
+output_data<1>|    8.060(R)|input_clk_BUFGP   |   0.000|
+output_data<2>|    7.996(R)|input_clk_BUFGP   |   0.000|
+output_data<3>|    8.013(R)|input_clk_BUFGP   |   0.000|
+output_data<4>|    7.985(R)|input_clk_BUFGP   |   0.000|
+output_data<5>|    8.395(R)|input_clk_BUFGP   |   0.000|
+output_data<6>|    8.134(R)|input_clk_BUFGP   |   0.000|
+output_data<7>|    8.243(R)|input_clk_BUFGP   |   0.000|
+--------------+------------+------------------+--------+
+
+Clock to Setup on destination clock input_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+input_clk      |    2.844|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Tue Apr 25 13:51:59 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4491 MB
+
+
+

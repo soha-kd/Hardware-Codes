@@ -1,0 +1,23 @@
+xst -intstyle ise -ifn "C:/Users/Fatima/Desktop/hw5/az5.xst" -ofn "C:/Users/Fatima/Desktop/hw5/az5.syr" 
+xst -intstyle ise -ifn "C:/Users/Fatima/Desktop/hw5/az5.xst" -ofn "C:/Users/Fatima/Desktop/hw5/az5.syr" 
+xst -intstyle ise -ifn "C:/Users/Fatima/Desktop/hw5/az5.xst" -ofn "C:/Users/Fatima/Desktop/hw5/az5.syr" 
+xst -intstyle ise -ifn "C:/Users/Fatima/Desktop/hw5/az5.xst" -ofn "C:/Users/Fatima/Desktop/hw5/az5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 az5.ngc az5.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o az5_map.ncd az5.ngd az5.pcf 
+par -w -intstyle ise -ol high -t 1 az5_map.ncd az5.ncd az5.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml az5.twx az5.ncd -o az5.twr az5.pcf 
+xst -intstyle ise -ifn "C:/Users/Fatima/Desktop/hw5/az5.xst" -ofn "C:/Users/Fatima/Desktop/hw5/az5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 az5.ngc az5.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o az5_map.ncd az5.ngd az5.pcf 
+par -w -intstyle ise -ol high -t 1 az5_map.ncd az5.ncd az5.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml az5.twx az5.ncd -o az5.twr az5.pcf 
+xst -intstyle ise -ifn "C:/Users/Fatima/Desktop/hw5/az5.xst" -ofn "C:/Users/Fatima/Desktop/hw5/az5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 az5.ngc az5.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o az5_map.ncd az5.ngd az5.pcf 
+par -w -intstyle ise -ol high -t 1 az5_map.ncd az5.ncd az5.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml az5.twx az5.ncd -o az5.twr az5.pcf 
+xst -intstyle ise -ifn "C:/Users/Fatima/Desktop/hw5/az5.xst" -ofn "C:/Users/Fatima/Desktop/hw5/az5.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 az5.ngc az5.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o az5_map.ncd az5.ngd az5.pcf 
+par -w -intstyle ise -ol high -t 1 az5_map.ncd az5.ncd az5.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml az5.twx az5.ncd -o az5.twr az5.pcf 

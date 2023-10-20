@@ -1,0 +1,31 @@
+Command line:
+   multiplier_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49166
+
+Tue May 02 22:59:42 2023
+
+
+ Elaboration Time: 0.1875 sec
+
+ Current Memory Usage: 674.841 Meg
+
+ Total Signals          : 7
+ Total Nets             : 63
+ Total Signal Drivers   : 4
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 3
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 546
+In process multiplier.vhd:47 
+ Target Size 9 and source size 11 for array dimension 0 does not match. 
+
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 674.841 Meg
+
+Tue May 02 23:13:54 2023
+

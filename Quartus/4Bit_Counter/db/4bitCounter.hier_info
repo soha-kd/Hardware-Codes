@@ -1,0 +1,30 @@
+|4bitCounter
+d3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+clk => inst.CLK
+clk => inst4.CLK
+clk => inst5.CLK
+clk => inst1.CLK
+u => inst48.IN0
+u => inst53.IN0
+u => inst55.IN0
+u => inst52.IN0
+u => inst6.IN2
+u => inst11.IN0
+u => inst30.IN0
+u => inst35.IN0
+u => inst38.IN0
+u => inst32.IN0
+u => inst39.IN0
+u => inst41.IN0
+u => inst43.IN0
+u => inst9.IN0
+u => inst15.IN1
+u => inst23.IN0
+u => inst21.IN1
+u => inst25.IN0
+u => inst27.IN0
+d2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+d0 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

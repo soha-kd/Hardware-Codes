@@ -1,0 +1,507 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Reading design: multiplier.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "multiplier.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "multiplier"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-pq208
+
+---- Source Options
+Top Module Name                    : multiplier
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/multiplier is now defined in a different file.  It was defined in "C:/Users/Fatima/Desktop/Az3/v2/multiplier.vhd", and is now defined in "C:/Users/ASUS/Desktop/v2/v2/multiplier.vhd".
+WARNING:HDLParsers:3607 - Unit work/multiplier/Behavioral is now defined in a different file.  It was defined in "C:/Users/Fatima/Desktop/Az3/v2/multiplier.vhd", and is now defined in "C:/Users/ASUS/Desktop/v2/v2/multiplier.vhd".
+Compiling vhdl file "C:/Users/ASUS/Desktop/v2/v2/multiplier.vhd" in Library work.
+Entity <multiplier> compiled.
+Entity <multiplier> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <multiplier> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <multiplier> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <temp_7$mux0000> in unit <multiplier> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <temp_0$mux0000> in unit <multiplier> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <multiplier> analyzed. Unit <multiplier> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <multiplier>.
+    Related source file is "C:/Users/ASUS/Desktop/v2/v2/multiplier.vhd".
+WARNING:Xst:653 - Signal <temp<8>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <temp<7>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <temp<0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <temp_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+Unit <multiplier> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 6
+ 1-bit latch                                           : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block temp_6.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block temp_5.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block temp_4.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block temp_3.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block temp_2.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block temp_1.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 6
+ 1-bit latch                                           : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch temp_6 hinder the constant cleaning in the block multiplier.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch temp_5 hinder the constant cleaning in the block multiplier.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch temp_4 hinder the constant cleaning in the block multiplier.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch temp_3 hinder the constant cleaning in the block multiplier.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch temp_2 hinder the constant cleaning in the block multiplier.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch temp_1 hinder the constant cleaning in the block multiplier.
+   You should achieve better results by setting this init to 1.
+
+Optimizing unit <multiplier> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block multiplier, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : multiplier.ngr
+Top Level Output File Name         : multiplier
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 18
+
+Cell Usage :
+# BELS                             : 18
+#      GND                         : 1
+#      LUT2                        : 2
+#      LUT3                        : 4
+#      LUT4                        : 10
+#      VCC                         : 1
+# FlipFlops/Latches                : 6
+#      LDPE                        : 6
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 18
+#      IBUF                        : 9
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s50pq208-5 
+
+ Number of Slices:                       15  out of    768     1%  
+ Number of Slice Flip Flops:              6  out of   1536     0%  
+ Number of 4 input LUTs:                 16  out of   1536     1%  
+ Number of IOs:                          18
+ Number of bonded IOBs:                  18  out of    124    14%  
+ Number of GCLKs:                         4  out of      8    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+y<4>                               | IBUF+BUFG              | 3     |
+y<3>                               | IBUF+BUFG              | 1     |
+y<2>                               | IBUF+BUFG              | 1     |
+y<1>                               | IBUF+BUFG              | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+temp_1_and0000(temp_1_and00001:O)  | NONE(temp_1)           | 1     |
+temp_2_or0000(temp_2_or00001:O)    | NONE(temp_2)           | 1     |
+temp_3_or0000(temp_3_or0000:O)     | NONE(temp_3)           | 1     |
+temp_4_or0000(temp_4_or0000:O)     | NONE(temp_4)           | 1     |
+temp_5_or0000(temp_5_or00001:O)    | NONE(temp_5)           | 1     |
+temp_6_and0000(temp_6_and00001:O)  | NONE(temp_6)           | 1     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.160ns
+   Maximum output required time after clock: 7.596ns
+   Maximum combinational path delay: 9.394ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'y<4>'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.160ns (Levels of Logic = 1)
+  Source:            x<1> (PAD)
+  Destination:       temp_5 (LATCH)
+  Destination Clock: y<4> falling
+
+  Data Path: x<1> to temp_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.715   0.921  x_1_IBUF (x_1_IBUF)
+     LDPE:GE                   0.524          temp_5
+    ----------------------------------------
+    Total                      2.160ns (1.239ns logic, 0.921ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'y<3>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.160ns (Levels of Logic = 1)
+  Source:            x<0> (PAD)
+  Destination:       temp_3 (LATCH)
+  Destination Clock: y<3> falling
+
+  Data Path: x<0> to temp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.715   0.921  x_0_IBUF (x_0_IBUF)
+     LDPE:GE                   0.524          temp_3
+    ----------------------------------------
+    Total                      2.160ns (1.239ns logic, 0.921ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'y<2>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.160ns (Levels of Logic = 1)
+  Source:            x<0> (PAD)
+  Destination:       temp_2 (LATCH)
+  Destination Clock: y<2> falling
+
+  Data Path: x<0> to temp_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.715   0.921  x_0_IBUF (x_0_IBUF)
+     LDPE:GE                   0.524          temp_2
+    ----------------------------------------
+    Total                      2.160ns (1.239ns logic, 0.921ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'y<1>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.160ns (Levels of Logic = 1)
+  Source:            x<0> (PAD)
+  Destination:       temp_1 (LATCH)
+  Destination Clock: y<1> falling
+
+  Data Path: x<0> to temp_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.715   0.921  x_0_IBUF (x_0_IBUF)
+     LDPE:GE                   0.524          temp_1
+    ----------------------------------------
+    Total                      2.160ns (1.239ns logic, 0.921ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'y<4>'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              7.596ns (Levels of Logic = 2)
+  Source:            temp_6 (LATCH)
+  Destination:       z<6> (PAD)
+  Source Clock:      y<4> falling
+
+  Data Path: temp_6 to z<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDPE:G->Q             1   0.551   0.976  temp_6 (temp_6)
+     LUT4:I0->O            1   0.479   0.681  temp_6_mux00011 (z_6_OBUF)
+     OBUF:I->O                 4.909          z_6_OBUF (z<6>)
+    ----------------------------------------
+    Total                      7.596ns (5.939ns logic, 1.657ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'y<3>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.596ns (Levels of Logic = 2)
+  Source:            temp_3 (LATCH)
+  Destination:       z<3> (PAD)
+  Source Clock:      y<3> falling
+
+  Data Path: temp_3 to z<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDPE:G->Q             1   0.551   0.976  temp_3 (temp_3)
+     LUT3:I0->O            1   0.479   0.681  temp_3_mux000315 (z_3_OBUF)
+     OBUF:I->O                 4.909          z_3_OBUF (z<3>)
+    ----------------------------------------
+    Total                      7.596ns (5.939ns logic, 1.657ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'y<2>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.596ns (Levels of Logic = 2)
+  Source:            temp_2 (LATCH)
+  Destination:       z<2> (PAD)
+  Source Clock:      y<2> falling
+
+  Data Path: temp_2 to z<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDPE:G->Q             1   0.551   0.976  temp_2 (temp_2)
+     LUT4:I0->O            1   0.479   0.681  temp_2_mux0002 (z_2_OBUF)
+     OBUF:I->O                 4.909          z_2_OBUF (z<2>)
+    ----------------------------------------
+    Total                      7.596ns (5.939ns logic, 1.657ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'y<1>'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.596ns (Levels of Logic = 2)
+  Source:            temp_1 (LATCH)
+  Destination:       z<1> (PAD)
+  Source Clock:      y<1> falling
+
+  Data Path: temp_1 to z<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDPE:G->Q             1   0.551   0.976  temp_1 (temp_1)
+     LUT4:I0->O            1   0.479   0.681  temp_1_mux00011 (z_1_OBUF)
+     OBUF:I->O                 4.909          z_1_OBUF (z<1>)
+    ----------------------------------------
+    Total                      7.596ns (5.939ns logic, 1.657ns route)
+                                       (78.2% logic, 21.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 36 / 6
+-------------------------------------------------------------------------
+Delay:               9.394ns (Levels of Logic = 4)
+  Source:            x<1> (PAD)
+  Destination:       z<1> (PAD)
+
+  Data Path: x<1> to z<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.715   1.216  x_1_IBUF (x_1_IBUF)
+     LUT2:I0->O            2   0.479   0.915  temp_1_and00001 (temp_1_and0000)
+     LUT4:I1->O            1   0.479   0.681  temp_1_mux00011 (z_1_OBUF)
+     OBUF:I->O                 4.909          z_1_OBUF (z<1>)
+    ----------------------------------------
+    Total                      9.394ns (6.582ns logic, 2.812ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.10 secs
+ 
+--> 
+
+Total memory usage is 4514604 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,7 @@
+V3 4
+FL C:/Users/ASUS/Desktop/v2/v2/multiplier.vhd 2023/05/08.17:12:35 P.20131013
+EN work/multiplier 1683549761 FL C:/Users/ASUS/Desktop/v2/v2/multiplier.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/multiplier/Behavioral 1683549762 \
+      FL C:/Users/ASUS/Desktop/v2/v2/multiplier.vhd EN work/multiplier 1683549761
+FL C:/Users/Fatima/Desktop/Az3/v2/multiplier.vhd 2023/05/08.13:04:19 P.20131013

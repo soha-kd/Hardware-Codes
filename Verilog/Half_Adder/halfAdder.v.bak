@@ -1,0 +1,4 @@
+module halfAdder(input a, b, output sum, cout);
+xor(s, a, b);
+and(cout, a, b);
+endmodule 

@@ -1,0 +1,55 @@
+|fourbitCounter
+ck => ck.IN4
+u => WideAnd0.IN2
+u => WideAnd1.IN2
+u => WideAnd2.IN2
+u => WideAnd3.IN4
+u => WideAnd11.IN2
+u => WideAnd12.IN2
+u => WideAnd13.IN3
+u => WideAnd16.IN2
+u => WideAnd17.IN2
+u => WideAnd4.IN4
+u => WideAnd5.IN2
+u => WideAnd6.IN2
+u => WideAnd7.IN2
+u => WideAnd8.IN2
+u => WideAnd9.IN2
+u => WideAnd10.IN3
+u => WideAnd14.IN2
+u => WideAnd15.IN2
+r => r.IN4
+v0 <= fourbitCounterDFF:d0.port3
+v1 <= fourbitCounterDFF:d1.port3
+v2 <= fourbitCounterDFF:d2.port3
+v3 <= fourbitCounterDFF:d3.port3
+
+
+|fourbitCounter|fourbitCounterDFF:d0
+clk => q~reg0.CLK
+d => q.DATAA
+rst => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fourbitCounter|fourbitCounterDFF:d1
+clk => q~reg0.CLK
+d => q.DATAA
+rst => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fourbitCounter|fourbitCounterDFF:d2
+clk => q~reg0.CLK
+d => q.DATAA
+rst => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fourbitCounter|fourbitCounterDFF:d3
+clk => q~reg0.CLK
+d => q.DATAA
+rst => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

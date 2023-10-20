@@ -1,0 +1,73 @@
+|fullAdder
+s0 <= adder:inst.s
+cin => adder:inst.cin
+b0 => adder:inst.b
+a0 => adder:inst.a
+s1 <= adder:inst1.s
+b1 => adder:inst1.b
+a1 => adder:inst1.a
+s2 <= adder:inst2.s
+b2 => adder:inst2.b
+a2 => adder:inst2.a
+s3 <= adder:inst3.s
+b3 => adder:inst3.b
+a3 => adder:inst3.a
+cout <= adder:inst3.cout
+
+
+|fullAdder|adder:inst
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+b => inst3.IN0
+b => inst2.IN0
+b => inst.IN1
+cin => inst3.IN1
+cin => inst1.IN0
+cin => inst.IN0
+a => inst4.IN1
+a => inst1.IN1
+a => inst2.IN1
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullAdder|adder:inst1
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+b => inst3.IN0
+b => inst2.IN0
+b => inst.IN1
+cin => inst3.IN1
+cin => inst1.IN0
+cin => inst.IN0
+a => inst4.IN1
+a => inst1.IN1
+a => inst2.IN1
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullAdder|adder:inst2
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+b => inst3.IN0
+b => inst2.IN0
+b => inst.IN1
+cin => inst3.IN1
+cin => inst1.IN0
+cin => inst.IN0
+a => inst4.IN1
+a => inst1.IN1
+a => inst2.IN1
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fullAdder|adder:inst3
+s <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+b => inst3.IN0
+b => inst2.IN0
+b => inst.IN1
+cin => inst3.IN1
+cin => inst1.IN0
+cin => inst.IN0
+a => inst4.IN1
+a => inst1.IN1
+a => inst2.IN1
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+

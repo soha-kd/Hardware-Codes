@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ASUS/Desktop/ENCODER 1/en1/test1_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/ENCODER 1/en1/test1_beh.prj" "work.test1" 

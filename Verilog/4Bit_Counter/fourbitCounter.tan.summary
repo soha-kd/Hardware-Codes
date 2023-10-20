@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.894 ns
+From           : u
+To             : fourbitCounterDFF:d3|q
+From Clock     : --
+To Clock       : ck
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.618 ns
+From           : fourbitCounterDFF:d0|q~DUPLICATE
+To             : v0
+From Clock     : ck
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -1.901 ns
+From           : r
+To             : fourbitCounterDFF:d0|q~DUPLICATE
+From Clock     : --
+To Clock       : ck
+Failed Paths   : 0
+
+Type           : Clock Setup: 'ck'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
+From           : fourbitCounterDFF:d0|q
+To             : fourbitCounterDFF:d3|q
+From Clock     : ck
+To Clock       : ck
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

@@ -1,0 +1,357 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: shiftRegister.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "shiftRegister.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "shiftRegister"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : shiftRegister
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ASUS/Desktop/fpga - hw2/hw2/shiftRegister.vhd" in Library work.
+Entity <shiftregister> compiled.
+Entity <shiftRegister> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <shiftRegister> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <shiftRegister> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "C:/Users/ASUS/Desktop/fpga - hw2/hw2/shiftRegister.vhd" line 21: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <input_mode>
+Entity <shiftRegister> analyzed. Unit <shiftRegister> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <shiftRegister>.
+    Related source file is "C:/Users/ASUS/Desktop/fpga - hw2/hw2/shiftRegister.vhd".
+    Found 8-bit register for signal <reg_data>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <shiftRegister> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <shiftRegister> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block shiftRegister, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : shiftRegister.ngr
+Top Level Output File Name         : shiftRegister
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 26
+#      INV                         : 1
+#      LUT2_L                      : 6
+#      LUT3                        : 1
+#      LUT4                        : 16
+#      MUXF5                       : 2
+# FlipFlops/Latches                : 8
+#      FDCE                        : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 13
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                       12  out of   3584     0%  
+ Number of Slice Flip Flops:              8  out of   7168     0%  
+ Number of 4 input LUTs:                 24  out of   7168     0%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    141    15%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+input_clk                          | BUFGP                  | 8     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------+------------------------+-------+
+Control Signal                         | Buffer(FF name)        | Load  |
+---------------------------------------+------------------------+-------+
+input_mode_inv(input_mode_inv1_INV_0:O)| NONE(reg_data_0)       | 8     |
+---------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.338ns (Maximum Frequency: 299.554MHz)
+   Minimum input arrival time before clock: 3.935ns
+   Maximum output required time after clock: 6.314ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'input_clk'
+  Clock period: 3.338ns (frequency: 299.554MHz)
+  Total number of paths / destination ports: 22 / 8
+-------------------------------------------------------------------------
+Delay:               3.338ns (Levels of Logic = 2)
+  Source:            reg_data_2 (FF)
+  Destination:       reg_data_1 (FF)
+  Source Clock:      input_clk rising
+  Destination Clock: input_clk rising
+
+  Data Path: reg_data_2 to reg_data_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.626   0.838  reg_data_2 (reg_data_2)
+     LUT4:I2->O            1   0.479   0.740  reg_data_mux0000<5>16 (reg_data_mux0000<5>16)
+     LUT4:I2->O            1   0.479   0.000  reg_data_mux0000<5>39 (reg_data_mux0000<5>)
+     FDCE:D                    0.176          reg_data_5
+    ----------------------------------------
+    Total                      3.338ns (1.760ns logic, 1.578ns route)
+                                       (52.7% logic, 47.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'input_clk'
+  Total number of paths / destination ports: 75 / 16
+-------------------------------------------------------------------------
+Offset:              3.935ns (Levels of Logic = 3)
+  Source:            input_shift_left (PAD)
+  Destination:       reg_data_1 (FF)
+  Destination Clock: input_clk rising
+
+  Data Path: input_shift_left to reg_data_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.715   1.346  input_shift_left_IBUF (input_shift_left_IBUF)
+     LUT4:I0->O            1   0.479   0.740  reg_data_mux0000<6>16 (reg_data_mux0000<6>16)
+     LUT4:I2->O            1   0.479   0.000  reg_data_mux0000<6>39 (reg_data_mux0000<6>)
+     FDCE:D                    0.176          reg_data_6
+    ----------------------------------------
+    Total                      3.935ns (1.849ns logic, 2.086ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'input_clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              6.314ns (Levels of Logic = 1)
+  Source:            reg_data_6 (FF)
+  Destination:       output_data<6> (PAD)
+  Source Clock:      input_clk rising
+
+  Data Path: reg_data_6 to output_data<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.626   0.779  reg_data_6 (reg_data_6)
+     OBUF:I->O                 4.909          output_data_6_OBUF (output_data<6>)
+    ----------------------------------------
+    Total                      6.314ns (5.535ns logic, 0.779ns route)
+                                       (87.7% logic, 12.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.72 secs
+ 
+--> 
+
+Total memory usage is 4498364 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

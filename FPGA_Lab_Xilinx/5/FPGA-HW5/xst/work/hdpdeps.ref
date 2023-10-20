@@ -1,0 +1,6 @@
+V3 3
+FL C:/Users/Fatima/Desktop/hw5/az5.vhd 2023/05/20.14:16:44 P.20131013
+EN work/az5 1684579612 FL C:/Users/Fatima/Desktop/hw5/az5.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/az5/Behavioral 1684579613 \
+      FL C:/Users/Fatima/Desktop/hw5/az5.vhd EN work/az5 1684579612

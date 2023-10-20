@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ASUS/Desktop/FPGA - HW4/sevenSegment/Seven_Segment_Binary_TB_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/FPGA - HW4/sevenSegment/Seven_Segment_Binary_TB_beh.prj" "work.Seven_Segment_Binary_TB" 

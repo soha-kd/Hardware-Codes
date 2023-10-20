@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/ASUS/Desktop/FPGA - HW4/sevenSegment/Seven_Segment_Binary.xst" -ofn "C:/Users/ASUS/Desktop/FPGA - HW4/sevenSegment/Seven_Segment_Binary.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-5 "Seven_Segment_Binary.ngc" Seven_Segment_Binary.ngd  
+map -intstyle ise -p xc3s400-pq208-5 -cm area -ir off -pr off -c 100 -o Seven_Segment_Binary_map.ncd Seven_Segment_Binary.ngd Seven_Segment_Binary.pcf 
+par -w -intstyle ise -ol high -t 1 Seven_Segment_Binary_map.ncd Seven_Segment_Binary.ncd Seven_Segment_Binary.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Seven_Segment_Binary.twx Seven_Segment_Binary.ncd -o Seven_Segment_Binary.twr Seven_Segment_Binary.pcf 

@@ -1,0 +1,2 @@
+vhdl work "Seven_Segment_Binary.vhd"
+vhdl work "Seven_Segment_Binary_TB.vhd"

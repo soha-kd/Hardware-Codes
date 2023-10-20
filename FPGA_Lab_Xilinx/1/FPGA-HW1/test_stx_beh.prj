@@ -1,0 +1,2 @@
+vhdl isim_temp "Detector.vhd"
+vhdl isim_temp "test.vhd"

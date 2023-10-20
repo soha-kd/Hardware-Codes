@@ -1,0 +1,8 @@
+V3 3
+FL "C:/Users/ASUS/Desktop/FPGA - HW4/sevenSegment/Seven_Segment_Binary.vhd" 2023/05/09.12:17:47 P.20131013
+EN work/Seven_Segment_Binary 1683618479 \
+      FL "C:/Users/ASUS/Desktop/FPGA - HW4/sevenSegment/Seven_Segment_Binary.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Seven_Segment_Binary/Behavioral 1683618480 \
+      FL "C:/Users/ASUS/Desktop/FPGA - HW4/sevenSegment/Seven_Segment_Binary.vhd" \
+      EN work/Seven_Segment_Binary 1683618479

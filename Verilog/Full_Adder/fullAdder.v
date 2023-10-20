@@ -1,0 +1,22 @@
+module fullAdder(a, b, cin, sum, cout);
+input a, b, cin;
+output sum, cout;
+assign sum = a^b^cin;
+assign cout = (a&b) | (a&cin) | (b&cin);
+endmodule 
+
+module fullAdder_4bit(A, B, Cin, S, Cout);
+input[3:0]A, B;
+input Cin;
+output[3:0]S;
+output Cout;
+
+wire c0, c1, c2;
+fullAdder f1(A[0], B[0], Cin, S[0], c0);
+fullAdder f2(A[1], B[1], c0, S[1], c1);
+fullAdder f3(A[2], B[2], c1, S[2], c2);
+fullAdder f4(A[3], B[3], c2, S[3], Cout);
+
+endmodule
+
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ASUS/Desktop/v2/v2/testbench_multiplier_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/v2/v2/testbench_multiplier_beh.prj" "work.testbench_multiplier" 

@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Fri Apr 09 22:28:51 2021
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : fourbitCounter
+Top-level Entity Name : fourbitCounter
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 4
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 7
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

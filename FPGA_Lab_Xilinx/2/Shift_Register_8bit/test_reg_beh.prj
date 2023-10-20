@@ -1,0 +1,2 @@
+vhdl work "shiftRegister.vhd"
+vhdl work "test_reg.vhd"

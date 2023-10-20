@@ -1,0 +1,335 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: Seven_Segment_Binary.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Seven_Segment_Binary.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Seven_Segment_Binary"
+Output Format                      : NGC
+Target Device                      : xc3s400-5-pq208
+
+---- Source Options
+Top Module Name                    : Seven_Segment_Binary
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/ASUS/Desktop/FPGA - HW4/sevenSegment/Seven_Segment_Binary.vhd" in Library work.
+Entity <Seven_Segment_Binary> compiled.
+Entity <Seven_Segment_Binary> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Seven_Segment_Binary> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Seven_Segment_Binary> in library <work> (Architecture <Behavioral>).
+Entity <Seven_Segment_Binary> analyzed. Unit <Seven_Segment_Binary> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Seven_Segment_Binary>.
+    Related source file is "C:/Users/ASUS/Desktop/FPGA - HW4/sevenSegment/Seven_Segment_Binary.vhd".
+    Found 16x7-bit ROM for signal <Seg_Code>.
+    Found 7-bit register for signal <Seg>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   7 D-type flip-flop(s).
+Unit <Seven_Segment_Binary> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Registers                                            : 1
+ 7-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Seven_Segment_Binary>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_Seg_Code> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <Seven_Segment_Binary> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Seven_Segment_Binary> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Seven_Segment_Binary, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Seven_Segment_Binary.ngr
+Top Level Output File Name         : Seven_Segment_Binary
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 7
+#      LUT3                        : 2
+#      LUT4                        : 5
+# FlipFlops/Latches                : 7
+#      FD                          : 5
+#      FDS                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 4
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s400pq208-5 
+
+ Number of Slices:                        4  out of   3584     0%  
+ Number of 4 input LUTs:                  7  out of   7168     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    141     8%  
+    IOB Flip Flops:                       7
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 7     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 4.033ns
+   Maximum output required time after clock: 6.216ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 31 / 9
+-------------------------------------------------------------------------
+Offset:              4.033ns (Levels of Logic = 2)
+  Source:            Number<0> (PAD)
+  Destination:       Seg_3 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: Number<0> to Seg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.715   1.201  Number_0_IBUF (Number_0_IBUF)
+     LUT4:I0->O            2   0.479   0.745  Mrom_Seg_Code61 (Mrom_Seg_Code6)
+     FDS:S                     0.892          Seg_3
+    ----------------------------------------
+    Total                      4.033ns (2.086ns logic, 1.947ns route)
+                                       (51.7% logic, 48.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              6.216ns (Levels of Logic = 1)
+  Source:            Seg_6 (FF)
+  Destination:       Seg<6> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: Seg_6 to Seg<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.626   0.681  Seg_6 (Seg_6)
+     OBUF:I->O                 4.909          Seg_6_OBUF (Seg<6>)
+    ----------------------------------------
+    Total                      6.216ns (5.535ns logic, 0.681ns route)
+                                       (89.0% logic, 11.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.01 secs
+ 
+--> 
+
+Total memory usage is 4498380 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

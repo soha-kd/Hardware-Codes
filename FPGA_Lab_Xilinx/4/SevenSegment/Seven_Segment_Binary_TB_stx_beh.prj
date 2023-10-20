@@ -1,0 +1,2 @@
+vhdl isim_temp "Seven_Segment_Binary.vhd"
+vhdl isim_temp "Seven_Segment_Binary_TB.vhd"

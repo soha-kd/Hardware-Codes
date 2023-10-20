@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/ASUS/Desktop/fpga-hw1/hw1/test_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/fpga-hw1/hw1/test_beh.prj" "work.test" 

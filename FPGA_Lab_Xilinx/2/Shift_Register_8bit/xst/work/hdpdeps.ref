@@ -1,0 +1,8 @@
+V3 3
+FL "C:/Users/ASUS/Desktop/fpga - hw2/hw2/shiftRegister.vhd" 2023/04/25.13:51:26 P.20131013
+EN work/shiftRegister 1682414492 \
+      FL "C:/Users/ASUS/Desktop/fpga - hw2/hw2/shiftRegister.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/shiftRegister/Behavioral 1682414493 \
+      FL "C:/Users/ASUS/Desktop/fpga - hw2/hw2/shiftRegister.vhd" \
+      EN work/shiftRegister 1682414492

@@ -1,0 +1,66 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Web Edition
+7
+3500
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+adder
+# storage
+db|fullAdder.(1).cnf
+db|fullAdder.(1).cnf
+# case_insensitive
+# source_file
+adder.bdf
+918e3e1dd4663c0474bb1fe4adf81c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder:inst
+adder:inst1
+adder:inst2
+adder:inst3
+}
+# macro_sequence
+
+# end
+# entity
+fullAdder
+# storage
+db|fullAdder.(0).cnf
+db|fullAdder.(0).cnf
+# case_insensitive
+# source_file
+fulladder.bdf
+e73d6263d55a8fe329af0a91d9524e1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

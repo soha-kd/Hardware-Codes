@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ASUS/Desktop/fpga - hw2/hw2/test_reg_isim_beh.exe" -prj "C:/Users/ASUS/Desktop/fpga - hw2/hw2/test_reg_beh.prj" "work.test_reg" 

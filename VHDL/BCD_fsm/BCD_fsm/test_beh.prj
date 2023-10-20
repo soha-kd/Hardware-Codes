@@ -1,0 +1,2 @@
+vhdl work "BCD_fsm.vhd"
+vhdl work "test.vhd"

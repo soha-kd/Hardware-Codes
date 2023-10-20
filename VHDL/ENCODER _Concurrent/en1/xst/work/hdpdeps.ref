@@ -1,0 +1,6 @@
+V3 3
+FL "C:/Users/ASUS/Desktop/ENCODER 1/en1/en1.vhd" 2022/01/04.19:44:22 P.20131013
+EN work/en1 1641313142 FL "C:/Users/ASUS/Desktop/ENCODER 1/en1/en1.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/en1/Behavioral 1641313143 \
+      FL "C:/Users/ASUS/Desktop/ENCODER 1/en1/en1.vhd" EN work/en1 1641313142
